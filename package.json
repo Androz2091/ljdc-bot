@@ -1,0 +1,23 @@
+{
+  "name": "ljdc-bot",
+  "version": "1.0.0",
+  "description": "Un bot Discord qui affiche une image aléatoire du site lesjoiesducode.fr",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Androz2091/ljdc-bot.git"
+  },
+  "author": "Androz2091",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Androz2091/ljdc-bot/issues"
+  },
+  "homepage": "https://github.com/Androz2091/ljdc-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "jsdom": "^15.2.0"
+  }
+}
