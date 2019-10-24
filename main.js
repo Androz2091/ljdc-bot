@@ -20,6 +20,11 @@ client.on("message", (message) => {
         return message.channel.send(`:wave: Bonjour, **${message.author}** ! Tape \`${config.prefix}random\` pour obtenir une image aléatoire !`);
     }
 
+    let ljdcMention = new RegExp(`^<@!?388465585983586323>( |)$`);
+    if(message.content.match(ljdcMention)){
+        return message.channel.send(`:x: Ne mentionnez pas Les Joies du Code svp !`);
+    }
+
     if(message.content.indexOf(config.prefix) !== 0) return;
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g),
     command = args.shift().toLowerCase();
