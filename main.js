@@ -34,7 +34,7 @@ client.on("message", (message) => {
         let url = `https://lesjoiesducode.fr/page/${rand}`;
         fetch(url).then(async (res) => {
             let dom = new JSDOM(await res.text()),
-            text = dom.window.document.getElementsByClassName("blog-post-title")[0].textContent,
+            text = dom.window.document.getElementsByClassName("index-blog-post-title")[0].textContent,
             image = dom.window.document.getElementsByClassName("blog-post-content")[0].getElementsByTagName("object")[0].data,
             embed = new Discord.RichEmbed()
             .setAuthor(message.author.tag, message.author.displayAvatarURL)
